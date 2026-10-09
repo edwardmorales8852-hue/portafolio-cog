@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FRAME 001 — Portafolio de Ingeniería Multimedia</title>
+<meta name="description" content="Dirección de arte, animación 3D y narrativas audiovisuales.">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<div id="progress" aria-hidden="true"></div>
+<a class="skip" href="#portafolio">Saltar al portafolio</a>
+<header class="nav">
+  <a class="logo" href="#inicio">FRAME <b>001</b></a>
+  <button class="burger" aria-expanded="false" aria-controls="menu">Menú</button>
+  <nav id="menu" aria-label="Principal">
+    <a href="#inicio">Inicio</a><a href="#portafolio">Portafolio</a><a href="#laboratorio">Laboratorio</a><a href="#sobre-mi">Sobre mí</a><a href="#contacto">Contacto</a>
+  </nav>
+</header>
+<main>
+<section id="inicio" class="hero">
+  <div class="hero-art" role="img" aria-label="Composición provisional: contraluz ámbar sobre una ciudad en silueta"></div>
+  <p class="meta top">INGENIERÍA MULTIMEDIA / CREATIVE PRACTICE</p>
+  <h1><span class="l" style="--i:0">IMAGINAR.</span><span class="l" style="--i:1">CONSTRUIR.</span><span class="l" style="--i:2">NARRAR.</span></h1>
+  <div class="hero-foot">
+    <p class="lead">Dirección de arte, animación 3D y narrativas audiovisuales</p>
+    <div class="cta"><a class="btn" href="#portafolio">Explorar proyectos</a><a class="link" href="#proceso">Conocer mi proceso</a></div>
+  </div>
+  <p class="meta credit">[Tu nombre] — <span class="year"></span></p>
+  <p class="meta scroll" aria-hidden="true">Desplaza ↓</p>
+</section>
+
+<section id="portafolio" class="sec">
+  <header class="sec-h"><p class="meta">Archivo de proyectos</p><h2>Portafolio</h2></header>
+  <p class="note">Los cuatro proyectos son ejemplos conceptuales editables, no encargos ni obras finalizadas.</p>
+  <div class="filters" id="filters" role="group" aria-label="Filtrar proyectos por categoría"></div>
+  <div class="grid" id="grid" aria-live="polite"></div>
+</section>
+
+<section id="laboratorio" class="sec alt">
+  <header class="sec-h"><p class="meta">Investigación en curso</p><h2>Visual Experiments</h2></header>
+  <div class="filters" id="labFilters" role="group" aria-label="Filtrar experimentos por técnica"></div>
+  <div class="lab" id="lab"></div>
+</section>
+
+<section id="proceso" class="sec">
+  <header class="sec-h"><p class="meta">De la idea a la entrega</p><h2>Proceso de producción</h2></header>
+  <div class="proc">
+    <div class="tabs" id="tabs" role="tablist" aria-label="Fases del proceso"></div>
+    <div class="panel" id="panel" role="tabpanel" tabindex="0"></div>
+  </div>
+</section>
+
+<section id="sobre-mi" class="sec alt">
+  <header class="sec-h"><p class="meta">Perfil creativo</p><h2>Sobre mí</h2></header>
+  <div class="about">
+    <div class="portrait" role="img" aria-label="Espacio reservado para retrato">Retrato opcional<br>assets/images/retrato.jpg</div>
+    <div>
+      <p class="big">[Escribe aquí una presentación breve y directa: quién eres, qué te interesa y cómo unes lenguaje audiovisual y tecnología.]</p>
+      <dl>
+        <dt>Intereses creativos</dt><dd>[Completa con intereses reales.]</dd>
+        <dt>Filosofía de trabajo</dt><dd>[Completa con tu forma de trabajar.]</dd>
+        <dt>Áreas profesionales</dt><dd>[Dirección de arte, animación 3D, producción audiovisual… edita según corresponda.]</dd>
+        <dt>Herramientas</dt><dd>[Lista solo las que domines.]</dd>
+        <dt>Formación</dt><dd>[Institución, programa y año. No inventes títulos.]</dd>
+        <dt>Colaboraciones</dt><dd>[Solo si existen.]</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="sec contact">
+  <h2 class="huge">LAS BUENAS IDEAS MERECEN SER PRODUCIDAS</h2>
+  <p class="lead">Disponible para explorar proyectos audiovisuales, dirección de arte, animación y experiencias digitales</p>
+  <p class="mail" id="mail"></p>
+  <div class="cta"><button class="btn" id="copy">Copiar correo</button><a class="btn ghost" id="mailto" href="#">Abrir correo</a></div>
+  <p class="status" id="status" role="status"></p>
+  <ul class="socials" id="socials"></ul>
+</section>
+</main>
+<footer class="foot meta"><span>FRAME 001 — <span class="year"></span></span><span>Cada imagen construye un universo</span></footer>
+<button class="top-btn" id="toTop" aria-label="Volver al inicio" hidden>↑</button>
+
+<dialog id="detail" aria-labelledby="dTitle"><div id="dBody"></div></dialog>
+<noscript><p style="padding:2rem">Este portafolio necesita JavaScript.</p></noscript>
+</body>
+</html>
